@@ -45,7 +45,7 @@ app.get('/', (req, res) => { res.status(200).send({ message: "Hello!", }); });
 app.get('/webhook', (req, res) => {
 
   // Your verify token. Should be a random string.
-  let VERIFY_TOKEN = "simsar-verify-token"
+  let VERIFY_TOKEN = "simsar-verify-token";
 
   // Parse the query params
   let mode = req.query['hub.mode'];
